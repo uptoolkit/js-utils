@@ -15,7 +15,8 @@ fi
 
 # Publish the package
 echo "Publishing the package to npm..."
-npm publish
+npm publish --access public
+
 
 # Check if publish was successful
 if [ $? -ne 0 ]; then
