@@ -1,0 +1,43 @@
+{
+  "name": "@uptoolkit/js-utils",
+  "version": "1.0.0",
+  "description": "Lib utils for your next project",
+  "author": "Daniel Sum <daniel@wearerebel.org>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src --format esm,cjs --dts && tsc-alias",
+    "test": "ts-node -r tsconfig-paths/register node_modules/.bin/jest",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "prettier": "^3.4.2",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.10",
+    "tsconfig-paths": "^4.2.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0",
+    "uuid": "^11.0.5"
+  },
+  "type": "module"
+}

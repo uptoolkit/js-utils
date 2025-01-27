@@ -1,0 +1,10 @@
+{
+  "semi": true,                // Add a semicolon at the end of statements
+  "singleQuote": true,         // Use single quotes instead of double quotes
+  "trailingComma": "es5",      // Add trailing commas where possible (e.g., objects, arrays)
+  "tabWidth": 2,               // Indent with 2 spaces
+  "useTabs": false,            // Indent using spaces, not tabs
+  "arrowParens": "always",     // Always include parentheses for arrow functions
+  "bracketSpacing": true,      // Add spaces between brackets in object literals
+  "endOfLine": "lf"            // Enforce Unix-style line endings
+}
